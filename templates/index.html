@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS-Shield | Spam Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🛡️ SMS-Shield</h1>
+    <h2>SMS Spam Detection System</h2>
+
+    <p class="description">
+    SMS-Shield uses Machine Learning and Natural Language Processing
+    to identify spam and genuine SMS messages.
+</p>
+
+    
+<form action="/predict" method="POST">
+
+    <label for="message">Enter your SMS message:</label>
+    <br><br>
+
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        cols="50"
+        placeholder="Type your SMS message here..."
+        required
+    ></textarea>
+
+    <br><br>
+
+    
+<button type="submit">Check Message</button>
+
+<button type="reset" class="clear-btn">Clear Message</button>
+
+
+ </form>
+{% if prediction %}
+    <div class="result">
+        <h2>Detection Result</h2>
+
+        <p>Your Message:</p>
+        <p>{{ message }}</p>
+
+        <h2>Prediction: {{ prediction }}</h2>
+
+        {% if prediction == "SPAM" %}
+            <p style="color: red;">
+                ⚠️ Warning! This message may be spam.
+            </p>
+        {% else %}
+            <p style="color: green;">
+                ✅ This message appears to be genuine.
+            </p>
+        {% endif %}
+    </div>
+{% endif %}
+
+
+
+
+<footer>
+    <p>© 2026 SMS-Shield | SMS Spam Detection System</p>
+    <p>Powered by Machine Learning and NLP</p>
+    <p>Made by ADITYA.S.PATIL</p>
+</footer>
+</body>
+</html>

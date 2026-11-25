@@ -71,5 +71,20 @@ SMS-Shield/
 ## Disclaimer
 This project is an educational prototype. Predictions may not always be correct.
 
-## Author
-Machine Learning Project – SMS-Shield
+
+## Student Details
+
+**Project Name:** SMS-Shield – SMS Spam Detection System
+
+**Developed By:** Aditya.S.Patil.
+
+**Roll No.:**TY2627AID030. 
+
+**Div:**T.Y.B.TECH(AIDS)-A.
+
+**Project Type:** Machine Learning.
+
+**Academic Year:** 2026–2027.
+
+**GitHub Repository:** SMS-Shield5
+

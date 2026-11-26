@@ -1,11 +1,19 @@
 
+
 # SMS-Shield 📩
 
 ## SMS Spam Detection System
 
-SMS-Shield is a Machine Learning based web application that identifies whether an SMS message is Spam or Not Spam.
+SMS-Shield is a Machine Learning-based web application that identifies whether an SMS message is Spam or Not Spam.
+
+## 🌐 Live Deployment
+
+**Live Application:** https://sms-shield5.onrender.com
+
+Try the application online without installing anything.
 
 ## Features
+
 - Detects spam and genuine SMS messages.
 - Uses Natural Language Processing (NLP).
 - Uses TF-IDF for text vectorization.
@@ -13,6 +21,7 @@ SMS-Shield is a Machine Learning based web application that identifies whether a
 - Provides a simple Flask web interface.
 
 ## Machine Learning Algorithms
+
 1. Naive Bayes
 2. Logistic Regression
 3. Support Vector Machine (SVM)
@@ -25,9 +34,10 @@ SMS-Shield is a Machine Learning based web application that identifies whether a
 | Logistic Regression | 97.04% |
 | SVM | 98.21% |
 
-Best Algorithm: SVM
+**Best Algorithm:** SVM
 
 ## Technologies Used
+
 - Python
 - Pandas
 - NumPy
@@ -39,46 +49,82 @@ Best Algorithm: SVM
 - CSS
 
 ## Dataset
+
 UCI SMS Spam Collection Dataset (5,574 messages).
 
-## How to Run
+## How to Run Locally
 
-1. Clone this repository.
-2. Install dependencies:
+Follow these steps to run the project on your computer.
 
-   pip install -r requirements.txt
+### 1. Clone the Repository
 
-3. Run the application:
+```bash
+git clone https://github.com/adipop19-hue/SMS-Shield5.git
+```
 
-   python app.py
+### 2. Open the Project Folder
 
-4. Open your browser:
+```bash
+cd SMS-Shield5
+```
 
-   http://127.0.0.1:5000
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+python app.py
+```
+
+### 5. Open in Browser
+
+Open the following URL in your browser:
+
+http://127.0.0.1:5000
 
 ## Project Structure
 
+```text
 SMS-Shield/
-- app.py
-- main.py
-- real_spam.csv
-- spam_model.pkl
-- tfidf_vectorizer.pkl
-- requirements.txt
-- templates/
-- static/
+│
+├── app.py
+├── main.py
+├── real_spam.csv
+├── spam_model.pkl
+├── tfidf_vectorizer.pkl
+├── requirements.txt
+│
+├── templates/
+│
+└── static/
+```
 
 ## Disclaimer
-This project is an educational prototype. Predictions may not always be correct.
 
+This project is an educational prototype. Predictions may not always be correct.
 
 ## Student Details
 
 **Project Name:** SMS-Shield – SMS Spam Detection System
 
-**Developed By:** Aditya.S.Patil.
+**Developed By:** Aditya S. Patil
 
-**Roll No.:**TY2627AID030. 
+**Roll No.:** TY2627AID030
+
+**Div:** T.Y.B.TECH (AIDS)-A
+
+**Project Type:** Machine Learning
+
+**Academic Year:** 2026–2027
+
+**GitHub Repository:** [SMS-Shield5](https://github.com/adipop19-hue/SMS-Shield5)
+
+**Live Deployment:** https://sms-shield5.onrender.com
+
 
 **Div:**T.Y.B.TECH(AIDS)-A.
 
